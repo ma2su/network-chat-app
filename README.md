@@ -39,12 +39,6 @@ applications operate.
 - Improving problem-solving and debugging skills
 - Applying networking concepts in a real project
 
-## Screenshots
-
-Screenshots and diagrams illustrating the application and its architecture are available
-in the `docs/` or `assets/` directory.
-
 ## Author
 
-Sven Mvula  
-Student in Networks & Telecommunications – Cybersecurity
+ma2su
