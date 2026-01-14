@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity3">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_navigation">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+
+
+            <TextView
+                android:id="@+id/titleAmis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Amis"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:padding="16dp"
+                android:gravity="center"/>
+
+            <EditText
+                android:id="@+id/inputFriend"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nom de l'ami"
+                android:padding="10dp"
+                android:background="@android:drawable/edit_text"
+                android:layout_marginBottom="10dp" />
+
+
+            <Button
+                android:id="@+id/BtnAddFriend"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ajouter un ami"
+                android:layout_marginBottom="16dp" />
+
+
+            <TextView
+                android:id="@+id/titleFriends"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vos amis"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp" />
+
+
+            <ListView
+                android:id="@+id/listFriends"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:dividerHeight="1dp"
+                android:layout_marginBottom="20dp" />
+
+
+            <TextView
+                android:id="@+id/titleRequests"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Demandes d'amis"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp" />
+
+
+            <ListView
+                android:id="@+id/listRequests"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:dividerHeight="1dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/bottom_nav_menu" />
+
+</RelativeLayout>

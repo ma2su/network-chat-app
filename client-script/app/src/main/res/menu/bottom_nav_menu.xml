@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_friends"
+        android:icon="@drawable/ic_friends"
+        android:title="Amis" />
+
+    <item
+        android:id="@+id/navigation_groups"
+        android:icon="@android:drawable/ic_menu_myplaces"
+        android:title="Groupes" />
+
+    <item
+        android:id="@+id/navigation_discussions"
+        android:icon="@drawable/ic_discussions"
+        android:title="Discussions" />
+
+    <item
+        android:id="@+id/navigation_logout"
+        android:icon="@android:drawable/ic_lock_power_off"
+        android:title="Quitter" />
+</menu>
